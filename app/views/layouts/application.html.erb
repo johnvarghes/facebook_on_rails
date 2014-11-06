@@ -8,7 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<% flash.each do |name, x| %>
+	<% flash.each do |name, msg| %>
 		<div class="alert text-center alert-<%= name == notice ? "success" : "error" %>">
 			<a close="close" data-dismiss="alert">x</a>
 			<%= msg %>
