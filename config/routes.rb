@@ -1,6 +1,6 @@
 FacebookOnRails::Application.routes.draw do
 
-  devise_for :users
+  devise_for :users, controllers: {omniauth_callback: 'users/omniauth_callback'}
   resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
